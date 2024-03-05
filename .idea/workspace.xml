@@ -5,23 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1007030-b5b9-4f1c-966f-60b3fc633369" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/model/Province.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/repo/ProvinceRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/service/province/IProvinceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/service/province/ProvinceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/35837935-7f26-4011-bae4-f7033ab0cf75.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/35837935-7f26-4011-bae4-f7033ab0cf75.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoorm/config/AppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/config/AppConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoorm/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoorm/controller/DemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/controller/DemoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoorm/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoorm/model/CustomerForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/model/CustomerForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoorm/repo/customer/CustomerRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/repo/customer/CustomerRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoorm/repo/customer/ICustomerRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/repo/customer/ICustomerRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoorm/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoorm/service/HibernateCustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/service/HibernateCustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoorm/service/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/service/ICustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +72,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Tomcat Server.Tomcat 8.5.661.executor": "Debug",
+    "Tomcat Server.Tomcat 8.5.661.executor": "Run",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -216,7 +201,7 @@
       <updated>1709261336546</updated>
       <workItem from="1709261337762" duration="10107000" />
       <workItem from="1709520338540" duration="4289000" />
-      <workItem from="1709604263706" duration="5742000" />
+      <workItem from="1709604263706" duration="11165000" />
     </task>
     <servers />
   </component>
@@ -233,7 +218,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/demoorm/controller/CustomerController.java</url>
-          <line>54</line>
+          <line>62</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>

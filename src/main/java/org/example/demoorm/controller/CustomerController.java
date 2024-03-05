@@ -2,6 +2,7 @@ package org.example.demoorm.controller;
 
 import org.example.demoorm.model.Customer;
 import org.example.demoorm.model.CustomerForm;
+import org.example.demoorm.model.Province;
 import org.example.demoorm.service.ICustomerService;
 import org.example.demoorm.service.province.IProvinceService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,11 +10,13 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.io.File;
@@ -24,6 +27,10 @@ import java.util.List;
 @RequestMapping("/customers")
 @PropertySource("classpath:upload_file.properties")
 public class CustomerController {
+    @ModelAttribute(value = "provinces")
+    public Iterable<Province> provinces(){
+        return provinceService.findAll();
+    }
 
     @Value("${upload}")
     private String upload;
@@ -33,17 +40,18 @@ public class CustomerController {
     private IProvinceService provinceService;
 
     @GetMapping("")
-    public String index(Model model, Pageable pageable) {
-        Page<Customer> customerList = customerService.findAll(pageable);
+    public ModelAndView index(@PageableDefault(size = 3)  Pageable pageable) {
 
-        model.addAttribute("customers", customerList);
-        return "/index";
+        Page<Customer> customerList = customerService.findAll(pageable);
+        ModelAndView modelAndView = new ModelAndView("/index");
+        modelAndView.addObject("customers", customerList);
+        return modelAndView;
     }
 
     @GetMapping("/create")
     public String create(Model model) {
         model.addAttribute("customer", new CustomerForm());
-        model.addAttribute("provinces", provinceService.findAll());
+//        model.addAttribute("provinces", provinceService.findAll());
         return "/create";
     }
 

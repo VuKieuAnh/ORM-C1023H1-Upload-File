@@ -10,6 +10,9 @@
         Add new customer
     </a>
 </p>
+<select>
+    <option th:each="p: ${provinces}" th:value="${p.id}" th:text="${p.name}"></option>
+</select>
 
 <div class="notify">
     <div th:if="${success}">
@@ -44,10 +47,10 @@
     </tbody>
 </table>
 <a class="btn btn-primary" th:if="${customers.hasPrevious()}"
-   th:href="@{/customers/page(page=${customers.number - 1})}">Previous</a>
+   th:href="@{'/customers?page='+${customers.number - 1}}">Previous</a>
 <span th:text="${customers.number + 1}"></span> | <span th:text="${customers.totalPages}"></span>
 <a class="btn btn-primary" th:if="${customers.hasNext()}"
-   th:href="@{/customers/page(page=${customers.number + 1})}">Next</a>
+   th:href="@{'/customers?page='+${customers.number + 1}}">Next</a>
 <footer th:replace="/layout :: footer"></footer>
 </body>
 </html>
