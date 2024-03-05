@@ -8,7 +8,7 @@ public interface ICustomerService {
 
     void save(Customer customer);
 
-    Customer findById(int id);
+    Customer findById(Long id);
 
-    void remove(int id);
+    void remove(Long id);
 }
