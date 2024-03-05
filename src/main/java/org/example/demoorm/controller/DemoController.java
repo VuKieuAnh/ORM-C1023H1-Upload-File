@@ -15,8 +15,8 @@ public class DemoController {
     private ICustomerService customerService;
     @GetMapping("/demo")
     public String demo(Model model){
-        List<Customer> customers = customerService.findAll();
-        model.addAttribute("c", customers);
+//        List<Customer> customers = customerService.findAll();
+//        model.addAttribute("c", customers);
         return "index";
     }
 }

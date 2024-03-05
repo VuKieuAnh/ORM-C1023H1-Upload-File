@@ -24,6 +24,7 @@
         <th>Email</th>
         <th>Address</th>
         <th>Img</th>
+        <th>Province</th>
         <th>Edit</th>
         <th>Delete</th>
         <th>View</th>
@@ -34,6 +35,7 @@
         <td th:text="${row.getName()}"></td>
         <td th:text="${row.getEmail()}"></td>
         <td th:text="${row.getAddress()}"></td>
+        <td th:text="${row.getProvince().getName()}"></td>
         <td><img th:src="@{'/i/'+${row.getImg()}}" width="100"></td>
         <td><a th:href="@{/customers/{id}/edit(id=${row.getId()})}">edit</a></td>
         <td><a th:href="@{/customers/{id}/delete(id=${row.getId()})}">delete</a></td>
@@ -41,6 +43,11 @@
     </tr>
     </tbody>
 </table>
+<a class="btn btn-primary" th:if="${customers.hasPrevious()}"
+   th:href="@{/customers/page(page=${customers.number - 1})}">Previous</a>
+<span th:text="${customers.number + 1}"></span> | <span th:text="${customers.totalPages}"></span>
+<a class="btn btn-primary" th:if="${customers.hasNext()}"
+   th:href="@{/customers/page(page=${customers.number + 1})}">Next</a>
 <footer th:replace="/layout :: footer"></footer>
 </body>
 </html>

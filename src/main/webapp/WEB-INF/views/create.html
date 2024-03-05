@@ -30,6 +30,12 @@
             <label for="address">IMG</label>
             <input type="file" id="img" th:field="*{img}"/>
         </div>
+        <div>
+            <label for="address">Provine</label>
+            <select th:field="*{province}">
+                <option th:each="p: ${provinces}" th:value="${p.id}" th:text="${p.name}"></option>
+            </select>
+        </div>
         <input type="submit" value="Save"/>
     </form>
 </div>

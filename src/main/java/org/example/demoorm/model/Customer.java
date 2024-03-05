@@ -81,4 +81,25 @@ public class Customer {
     public void setAddress(String address) {
         this.address = address;
     }
+
+    @ManyToOne
+    @JoinColumn(name="province_id")
+    private Province province;
+
+    public Customer(Long id, String name, String email, String address, String img, Province province) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.address = address;
+        this.img = img;
+        this.province = province;
+    }
+
+    public Province getProvince() {
+        return province;
+    }
+
+    public void setProvince(Province province) {
+        this.province = province;
+    }
 }
