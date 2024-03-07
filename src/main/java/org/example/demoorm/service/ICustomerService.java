@@ -1,4 +1,5 @@
 package org.example.demoorm.service;
+import org.example.demoorm.exception.NotFoundException;
 import org.example.demoorm.model.Customer;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -10,7 +11,7 @@ public interface ICustomerService {
 
     void save(Customer customer);
 
-    Customer findById(Long id);
+    Customer findById(Long id) throws NotFoundException;
 
     void remove(Long id);
 }

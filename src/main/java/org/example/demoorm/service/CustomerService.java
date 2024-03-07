@@ -1,5 +1,6 @@
 package org.example.demoorm.service;
 
+import org.example.demoorm.exception.NotFoundException;
 import org.example.demoorm.model.Customer;
 import org.example.demoorm.repo.customer.ICustomerRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +9,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class CustomerService implements ICustomerService {
@@ -25,8 +27,13 @@ public class CustomerService implements ICustomerService {
     }
 
     @Override
-    public Customer findById(Long id) {
-        return null;
+    public Customer findById(Long id) throws NotFoundException{
+        Optional<Customer> customer = customerRepo.findById(id);
+        if (customer.isPresent()) {
+            return customer.get();
+        }
+        else
+            throw new NotFoundException();
     }
 
     @Override

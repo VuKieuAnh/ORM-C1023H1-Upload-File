@@ -1,5 +1,6 @@
 package org.example.demoorm.controller;
 
+import org.example.demoorm.exception.NotFoundException;
 import org.example.demoorm.model.Customer;
 import org.example.demoorm.model.CustomerForm;
 import org.example.demoorm.model.Province;
@@ -78,7 +79,7 @@ public class CustomerController {
 
     @GetMapping("/{id}/edit")
     public String update(@PathVariable Long id, Model model) {
-        model.addAttribute("customer", customerService.findById(id));
+//        model.addAttribute("customer", customerService.findById(id));
         return "/update";
     }
 
@@ -90,7 +91,7 @@ public class CustomerController {
 
     @GetMapping("/{id}/delete")
     public String delete(@PathVariable Long id, Model model) {
-        model.addAttribute("customer", customerService.findById(id));
+//        model.addAttribute("customer", customerService.findById(id));
         return "/delete";
     }
 
@@ -101,9 +102,14 @@ public class CustomerController {
         return "redirect:/customers";
     }
 
-    @GetMapping("/{id}/view")
-    public String view(@PathVariable Long id, Model model) {
-        model.addAttribute("customer", customerService.findById(id));
+    @GetMapping("/{id}")
+    public String view(@PathVariable Long id, Model model) throws NotFoundException {
+        Customer customer = customerService.findById(id);
+        model.addAttribute("customer", customer);
         return "/view";
+    }
+    @ExceptionHandler(NotFoundException.class)
+    public String notfound(){
+        return "/notfound";
     }
 }
