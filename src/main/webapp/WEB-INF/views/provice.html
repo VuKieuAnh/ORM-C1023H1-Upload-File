@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="/layout :: head">
+    <title>ListCustomer</title>
+</head>
+<body>
+<h3>Customers</h3>
+<h1>Danh sach tinh</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Ten</th>
+        <th>So luong khach hang</th>
+    </tr>
+    </thead>
+    <tbody th:each="pi: ${p}">
+    <tr>
+        <td th:text="${pi.getName()}"></td>
+        <td th:text="${pi.getTotalOfCustomer()}"></td>
+    </tr>
+    </tbody>
+</table>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>

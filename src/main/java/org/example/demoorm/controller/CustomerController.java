@@ -1,9 +1,9 @@
 package org.example.demoorm.controller;
 
 import org.example.demoorm.exception.NotFoundException;
-import org.example.demoorm.model.Customer;
-import org.example.demoorm.model.CustomerForm;
-import org.example.demoorm.model.Province;
+import org.example.demoorm.model.entity.Customer;
+import org.example.demoorm.model.DTO.CustomerForm;
+import org.example.demoorm.model.entity.Province;
 import org.example.demoorm.service.ICustomerService;
 import org.example.demoorm.service.province.IProvinceService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +22,6 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.List;
 
 @Controller
 @RequestMapping("/customers")

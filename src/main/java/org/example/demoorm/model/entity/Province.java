@@ -1,4 +1,4 @@
-package org.example.demoorm.model;
+package org.example.demoorm.model.entity;
 
 import javax.persistence.*;
 

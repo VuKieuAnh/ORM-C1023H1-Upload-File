@@ -1202,111 +1202,75 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
-    <table id="359" parent="353" name="customer">
+    <table id="359" parent="354" name="Province">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="360" parent="354" name="Province">
+    <table id="360" parent="354" name="customer">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="361" parent="354" name="customer">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </table>
-    <column id="362" parent="359" name="id">
-      <AutoIncrement>9</AutoIncrement>
-      <DasType>int|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="363" parent="359" name="address">
-      <DasType>varchar(255)|0s</DasType>
-      <Position>2</Position>
-    </column>
-    <column id="364" parent="359" name="email">
-      <DasType>varchar(255)|0s</DasType>
-      <Position>3</Position>
-    </column>
-    <column id="365" parent="359" name="name">
-      <DasType>varchar(255)|0s</DasType>
-      <Position>4</Position>
-    </column>
-    <column id="366" parent="359" name="img">
-      <DasType>varchar(255)|0s</DasType>
-      <Position>5</Position>
-    </column>
-    <index id="367" parent="359" name="PRIMARY">
-      <ColNames>id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="368" parent="359" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="369" parent="360" name="id">
+    <column id="361" parent="359" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="370" parent="360" name="name">
+    <column id="362" parent="359" name="name">
       <DasType>varchar(255)|0s</DasType>
       <Position>2</Position>
     </column>
-    <index id="371" parent="360" name="PRIMARY">
+    <index id="363" parent="359" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="372" parent="360" name="PRIMARY">
+    <key id="364" parent="359" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="373" parent="361" name="id">
+    <column id="365" parent="360" name="id">
       <AutoIncrement>7</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="374" parent="361" name="address">
+    <column id="366" parent="360" name="address">
       <DasType>varchar(255)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="375" parent="361" name="email">
+    <column id="367" parent="360" name="email">
       <DasType>varchar(255)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="376" parent="361" name="img">
+    <column id="368" parent="360" name="img">
       <DasType>varchar(255)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="377" parent="361" name="name">
+    <column id="369" parent="360" name="name">
       <DasType>varchar(255)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="378" parent="361" name="province_id">
+    <column id="370" parent="360" name="province_id">
       <DasType>bigint|0s</DasType>
       <Position>6</Position>
     </column>
-    <foreign-key id="379" parent="361" name="FKitkjp4ccp2vvbhki6jk69rg7h">
+    <foreign-key id="371" parent="360" name="FKitkjp4ccp2vvbhki6jk69rg7h">
       <ColNames>province_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>Province</RefTableName>
     </foreign-key>
-    <index id="380" parent="361" name="PRIMARY">
+    <index id="372" parent="360" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="381" parent="361" name="FKitkjp4ccp2vvbhki6jk69rg7h">
+    <index id="373" parent="360" name="FKitkjp4ccp2vvbhki6jk69rg7h">
       <ColNames>province_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="382" parent="361" name="PRIMARY">
+    <key id="374" parent="360" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

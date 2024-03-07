@@ -1,14 +1,13 @@
 package org.example.demoorm.service;
 
 import org.example.demoorm.exception.NotFoundException;
-import org.example.demoorm.model.Customer;
+import org.example.demoorm.model.entity.Customer;
 import org.example.demoorm.repo.customer.ICustomerRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.Optional;
 
 @Service

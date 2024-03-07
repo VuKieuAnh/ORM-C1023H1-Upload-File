@@ -1,7 +1,6 @@
-package org.example.demoorm.model;
+package org.example.demoorm.model.DTO;
+import org.example.demoorm.model.entity.Province;
 import org.springframework.web.multipart.MultipartFile;
-
-import javax.persistence.*;
 
 public class CustomerForm {
     private int id;

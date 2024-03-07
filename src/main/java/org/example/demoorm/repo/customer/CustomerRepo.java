@@ -1,6 +1,6 @@
 //package org.example.demoorm.repo.customer;
 //
-//import org.example.demoorm.model.Customer;
+//import org.example.demoorm.model.entity.Customer;
 //import org.springframework.stereotype.Repository;
 //
 //import javax.persistence.EntityManager;

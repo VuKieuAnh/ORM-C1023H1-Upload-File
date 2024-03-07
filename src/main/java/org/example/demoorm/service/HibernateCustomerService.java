@@ -1,6 +1,6 @@
 //package org.example.demoorm.service;
 //
-//import org.example.demoorm.model.Customer;
+//import org.example.demoorm.model.entity.Customer;
 //import org.hibernate.HibernateException;
 //import org.hibernate.Session;
 //import org.hibernate.SessionFactory;
