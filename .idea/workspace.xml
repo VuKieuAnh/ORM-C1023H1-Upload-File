@@ -5,27 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1007030-b5b9-4f1c-966f-60b3fc633369" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/controller/ProvinceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/model/DTO/CountCustomer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/provice.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/provicecount.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/35837935-7f26-4011-bae4-f7033ab0cf75.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/35837935-7f26-4011-bae4-f7033ab0cf75.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoorm/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoorm/controller/DemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/controller/DemoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoorm/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/model/entity/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoorm/model/CustomerForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/model/DTO/CustomerForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoorm/model/Province.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/model/entity/Province.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoorm/controller/APIProvinceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/controller/APIProvinceController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoorm/repo/ProvinceRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/repo/ProvinceRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoorm/repo/customer/CustomerRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/repo/customer/CustomerRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoorm/repo/customer/ICustomerRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/repo/customer/ICustomerRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoorm/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoorm/service/HibernateCustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/service/HibernateCustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoorm/service/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/service/ICustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoorm/service/province/IProvinceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/service/province/IProvinceService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoorm/service/province/ProvinceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/service/province/ProvinceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.conf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.conf.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,9 +44,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Class" />
         <option value="HTMLThymelead" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -98,6 +84,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -225,7 +214,12 @@
       <workItem from="1709520338540" duration="4289000" />
       <workItem from="1709604263706" duration="11820000" />
       <workItem from="1709777053018" duration="5270000" />
-      <workItem from="1709796144667" duration="6862000" />
+      <workItem from="1709796144667" duration="7087000" />
+      <workItem from="1710126574815" duration="3029000" />
+      <workItem from="1710132221918" duration="331000" />
+      <workItem from="1710148318287" duration="12000" />
+      <workItem from="1710160862018" duration="2531000" />
+      <workItem from="1710233146518" duration="1750000" />
     </task>
     <servers />
   </component>
