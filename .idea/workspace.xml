@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1007030-b5b9-4f1c-966f-60b3fc633369" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/35837935-7f26-4011-bae4-f7033ab0cf75.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/35837935-7f26-4011-bae4-f7033ab0cf75.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoorm/controller/APIProvinceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/controller/APIProvinceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoorm/repo/ProvinceRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/repo/ProvinceRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoorm/repo/customer/ICustomerRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/repo/customer/ICustomerRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demoorm/service/province/ProvinceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demoorm/service/province/ProvinceService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -219,12 +215,23 @@
       <workItem from="1710132221918" duration="331000" />
       <workItem from="1710148318287" duration="12000" />
       <workItem from="1710160862018" duration="2531000" />
-      <workItem from="1710233146518" duration="1750000" />
+      <workItem from="1710233146518" duration="7456000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -28,6 +28,8 @@ public class ProvinceService implements IProvinceService {
 
     @Override
     public void deleteById(Long id) {
+//        service cua kha hang
+//        -> khong co transtraction
         provinceRepo.deleteByFindId(id);
     }
 

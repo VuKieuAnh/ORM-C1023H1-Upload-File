@@ -41,7 +41,12 @@ public class APIProvinceController
 
     @PostMapping("/{id}")
     public ResponseEntity<Province> deleteById(@PathVariable Long id){
+//        goi sẻvice thay doi bankhang hang
+//        xoatinh
+//        xu ly nghiep vu -> khong dung dung
         provinceService.deleteById(id);
+
+
         return new ResponseEntity<>(HttpStatus.OK);
     }
 }
